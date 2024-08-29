@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="/public/logo-dark.webp" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/helvetica-neue-5?styles=103500"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        background-color: #050709;
+      }
+      h1 {
+        font-size: 1.17rem;
+        color: white;
+      }
+      .contact-bg {
+        position: absolute;
+        top: 0;
+        opacity: 0.7;
+        z-index: 8;
+        height: 70vh;
+        background-repeat: no-repeat;
+        background-image: url(/public/about-bg.jpg);
+        width: 98.9vw;
+        h1 {
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 50;
+          margin: 8% auto 3% auto;
+          font-size: 3rem;
+          font-weight: bolder;
+        }
+        div {
+          display: flex;
+          flex-direction: row;
+          align-content: center;
+          margin: 0 auto;
+          justify-content: space-between;
+          width: 11vw;
+          h2 {
+            color: white;
+            z-index: 50;
+            margin: 0;
+            opacity: initial;
+            font-size: 1.2rem;
+            font-family: "Sora", sans-serif;
+            font-weight: bold;
+          }
+        }
+      }
+      .form-div {
+        max-width: 40vw;
+        background-color: #140c1c;
+        padding: 2rem;
+        border-radius: 2rem;
+
+        input,
+        textarea {
+          background-color: #050709;
+          border: solid 1px #140c1c;
+          border-radius: 1rem;
+          color: white;
+          padding: 1rem;
+        }
+        textarea {
+          padding: 1rem 18rem 3rem 1rem;
+        }
+        h1 {
+          font-size: 50px;
+          background-image: linear-gradient(to right, #8d59f7, #f4effe);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        p,
+        input,
+        textarea {
+          font-size: 1.2rem;
+        }
+        p {
+          padding: 0rem 5rem 1rem 0.5rem;
+        }
+        h1,
+        p {
+          color: white;
+        }
+        button {
+          background-image: linear-gradient(to right, #7b48e2, #3a1e6f);
+          font-weight: bold;
+          font-size: 1rem;
+          color: white;
+          padding: 1rem 2rem;
+          border-radius: 1.5rem;
+          border: none;
+        }
+
+        /* a {
+          font-size: large;
+          font-weight: bolder;
+          color: white;
+        } */
+        /* a:hover {
+          font-weight: lighter;
+        }
+        a:hover::before {
+          content: "before";
+          text-decoration: none;
+          background-color: green;
+        }
+        a:hover::after {
+          content: "-after";
+          text-decoration: underline;
+          background-color: green;
+        } */
+      }
+      .right-div {
+        div {
+          display: flex;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <div>
+        <nav
+          style="
+            padding: 0vw 5vw;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            align-content: baseline;
+          "
+        >
+          <a href="/index.html" style="display: flex; color: white">
+            <div
+              style="
+                display: flex;
+                gap: 2rem;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <img
+                src="/public/logo-light.webp"
+                height="60"
+                width="60"
+                alt=""
+              />
+              <h1>Hassan Amin Shah</h1>
+            </div>
+          </a>
+          <div class="nav">
+            <!-- <div class="links">
+            <a href="">
+              <h1>Home</h1>
+            </a>
+            <h3></h3>
+          </div> -->
+            <div class="links">
+              <a href="/about.html">
+                <h1>About</h1>
+              </a>
+              <h3></h3>
+            </div>
+            <div class="links">
+              <h1>Projects</h1>
+              <h3></h3>
+            </div>
+            <div class="links">
+              <a href="/contact.html">
+                <h1>Contact</h1>
+              </a>
+              <h3></h3>
+            </div>
+          </div>
+          <h1
+            style="
+              padding: 1rem 2rem;
+              background-color: #341b66;
+              background-image: linear-gradient(to right, #341b66, #7b48e1);
+              color: white;
+              border-radius: 3rem;
+              font-weight: bold;
+              cursor: pointer;
+            "
+          >
+            <a href="mailto:hasanaminshah@gmail.com" style="color: white">
+              Hire Me!
+            </a>
+          </h1>
+        </nav>
+        <div class="contact-bg">
+          <h1>Contact</h1>
+          <div>
+            <h2><a href="/index.html" style="color: white">Home</a></h2>
+            <img src="/public/arrow-right1.svg" alt="" />
+            <h2>Contact</h2>
+          </div>
+        </div>
+      </div>
+
+      <div
+        style="
+          margin: 30rem 5vw 15rem 5vw;
+          display: flex;
+          justify-content: space-between;
+        "
+      >
+        <div class="form-div">
+          <h1>Let’s work together!</h1>
+          <p>
+            I design and code beautifully simple things and i love what i do.
+            Just simple like that!
+          </p>
+          <form>
+            <input type="text" id="fname" value="First Name" />
+            <input type="text" id="lname" value="Last Name" /><br /><br />
+            <input type="email" id="email" value="Email Address" />
+            <input type="text" id="phone" value="Phone Number" /><br /><br />
+            <textarea type="text" value="Message">Message </textarea>
+            <br /><br />
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+        <div
+          class="right-div"
+          style="
+            width: 40vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 3rem;
+          "
+        >
+          <div style="height: 17vh; width: 100%; column-gap: 1rem">
+            <div
+              style="
+                background-image: linear-gradient(to bottom, #391d6e, #7847dd);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #8750f7;
+                border-radius: 50%;
+                padding: 0.5rem 2.3rem;
+              "
+            >
+              <img src="/public/phone.svg" width="40px" height="40px" alt="" />
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                color: white;
+                justify-content: center;
+              "
+            >
+              <h1 style="margin: 0; font-size: 1.5rem">Phone</h1>
+              <p
+                style="
+                  margin: 0.8rem 0rem;
+                  font-size: 1.5rem;
+                  font-weight: bold;
+                "
+              >
+                +01 123 654 8096
+              </p>
+            </div>
+          </div>
+          <div
+            style="
+              height: 17vh;
+              width: 100%;
+              column-gap: 1rem;
+              margin-top: 2rem;
+            "
+          >
+            <div
+              style="
+                background-image: linear-gradient(to bottom, #391d6e, #7847dd);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #8750f7;
+                border-radius: 50%;
+                padding: 0.5rem 2.3rem;
+              "
+            >
+              <img src="/public/mail.svg" width="40px" height="40px" alt="" />
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                color: white;
+                justify-content: center;
+              "
+            >
+              <h1 style="margin: 0; font-size: 1.5rem">Email</h1>
+              <p
+                style="
+                  margin: 0.8rem 0rem;
+                  font-size: 1.5rem;
+                  font-weight: bold;
+                "
+              >
+                hasanaminshah@gmail.com
+              </p>
+            </div>
+          </div>
+          <div
+            style="
+              height: 17vh;
+              width: 100%;
+              column-gap: 1rem;
+              margin-top: 2rem;
+            "
+          >
+            <div
+              style="
+                background-image: linear-gradient(to bottom, #391d6e, #7847dd);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #8750f7;
+                border-radius: 50%;
+                padding: 0.5rem 2.3rem;
+              "
+            >
+              <img
+                src="/public/location.svg"
+                width="40px"
+                height="40px"
+                alt=""
+              />
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: white;
+              "
+            >
+              <h1 style="margin: 0; font-size: 1.5rem">Address</h1>
+              <p
+                style="
+                  margin: 0.8rem 0rem;
+                  font-size: 1.5rem;
+                  font-weight: bold;
+                "
+              >
+                Warne Park Street Pine, FL 33157, New York
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer
+        style="
+          height: 30rem;
+          background-color: #2a1454;
+          display: flex;
+          flex-direction: column;
+          margin-top: 1rem;
+          align-items: center;
+        "
+      >
+        <div class="footer">
+          <img src="/public/logo-dark.webp" width="85" height="85" alt="" />
+          <div>
+            <a href="">About</a>
+            <a href="">Projects</a>
+            <a href="">Contact</a>
+          </div>
+          <p>© 2024 All rights reserved by <span>ThemeJunction</span></p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

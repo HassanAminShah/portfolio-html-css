@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/public/logo-dark.webp" />
+
+    <link
+      href="https://fonts.cdnfonts.com/css/helvetica-neue-5?styles=103500"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        background-color: #0b0410;
+        position: relative;
+      }
+      h1 {
+        font-size: 1.17rem;
+        color: white;
+      }
+      .about {
+        position: absolute;
+        top: 0;
+        z-index: 8;
+        height: 70vh;
+        background-repeat: no-repeat;
+        width: 98.9vw;
+        background-image: url(/public/about-bg.jpg);
+        overflow-x: hidden;
+
+        h1 {
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 50;
+          margin: 8% auto 3% auto;
+          font-size: 3rem;
+          font-weight: bolder;
+        }
+        div {
+          display: flex;
+          flex-direction: row;
+          align-content: center;
+          margin: 0 auto;
+          justify-content: space-between;
+          width: 11vw;
+          h2 {
+            color: white;
+            z-index: 50;
+            margin: 0;
+            opacity: initial;
+            font-size: 1.2rem;
+            font-family: "Sora", sans-serif;
+            font-weight: bold;
+          }
+        }
+      }
+      .resume {
+        z-index: 100;
+        padding: 0rem 4rem;
+        margin-top: 30%;
+        text-align: center;
+        max-width: 100vw;
+
+        h3 {
+          padding: 0;
+          margin: 0;
+          background-image: linear-gradient(to right, #8b55f8, #f6f2ff);
+          font-size: 45px;
+          color: transparent;
+          max-width: 90vw;
+          background-clip: text;
+        }
+        h4 {
+          color: white;
+          font-size: 40px;
+        }
+        ul {
+          li {
+            color: white;
+          }
+        }
+        .left,
+        .right {
+          max-width: 30vw;
+          list-style-position: outside;
+          ul {
+            max-width: 30vw;
+            li {
+              font-size: 2rem;
+              div {
+                display: flex;
+                justify-content: start;
+                padding-left: 1rem;
+                column-gap: 2rem;
+                align-items: center;
+                div {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: start;
+                  h4 {
+                    font-size: 25px;
+                    text-align: start;
+                  }
+                  h5 {
+                    color: #814cec;
+                    font-size: 20px;
+                    padding: 0;
+                    margin: 1rem 0rem;
+                  }
+                  h6 {
+                    color: white;
+                    font-size: 16px;
+                    padding: 0;
+                    margin: 1rem 0rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <nav
+        style="
+          padding: 0vw 5vw;
+          position: sticky;
+          top: 0;
+          z-index: 10;
+          display: flex;
+          justify-content: space-between;
+          align-content: baseline;
+        "
+      >
+        <a href="/index.html" style="display: flex; color: white">
+          <div
+            style="
+              display: flex;
+              gap: 2rem;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <img src="/public/logo-light.webp" height="60" width="60" alt="" />
+            <h1>Hassan Amin Shah</h1>
+          </div>
+        </a>
+        <div class="nav">
+          <!-- <div class="links">
+            <a href="">
+              <h1>Home</h1>
+            </a>
+            <h3></h3>
+          </div> -->
+          <div class="links">
+            <a href="/about.html">
+              <h1>About</h1>
+            </a>
+            <h3></h3>
+          </div>
+          <div class="links">
+            <h1>Projects</h1>
+            <h3></h3>
+          </div>
+          <div class="links">
+            <a href="/contact.html">
+              <h1>Contact</h1>
+            </a>
+            <h3></h3>
+          </div>
+        </div>
+        <h1
+          style="
+            padding: 1rem 2rem;
+            background-color: #341b66;
+            background-image: linear-gradient(to right, #341b66, #7b48e1);
+            color: white;
+            border-radius: 3rem;
+            font-weight: bold;
+            cursor: pointer;
+          "
+        >
+          <a href="mailto:hasanaminshah@gmail.com" style="color: white">
+            Hire Me!
+          </a>
+        </h1>
+      </nav>
+      <div class="about">
+        <h1>About</h1>
+        <div>
+          <h2><a href="/index.html" style="color: white">Home</a></h2>
+          <img src="/public/arrow-right1.svg" alt="" />
+          <h2>About</h2>
+        </div>
+      </div>
+
+      <div class="resume">
+        <h3>My Resume</h3>
+        <div
+          class="two-divs"
+          style="
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5rem;
+            padding: 0 5vw;
+          "
+        >
+          <div class="left">
+            <h4 style="display: flex; padding-left: 1.5rem">Education</h4>
+            <ul>
+              <li>
+                <div>
+                  <div
+                    style="
+                      padding: 1rem;
+                      border-radius: 2rem;
+                      background-color: #2a1454;
+                    "
+                  >
+                    <img src="/public/graduation.svg" alt="" />
+                  </div>
+                  <div>
+                    <h5>2023 - 2024</h5>
+                    <h4>Programming course</h4>
+                    <h6>Harverd University</h6>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div
+                    style="
+                      padding: 1rem;
+                      border-radius: 2rem;
+                      background-color: #2a1454;
+                    "
+                  >
+                    <img src="/public/graduation.svg" alt="" />
+                  </div>
+                  <div>
+                    <h5>2023 - 2024</h5>
+                    <h4>Graphics Design Course</h4>
+                    <h6>Harverd University</h6>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div
+                    style="
+                      padding: 1rem;
+                      border-radius: 2rem;
+                      background-color: #2a1454;
+                    "
+                  >
+                    <img src="/public/graduation.svg" alt="" />
+                  </div>
+                  <div>
+                    <h5>2023 - 2024</h5>
+                    <h4>Graphics Design Course</h4>
+                    <h6>Harverd University</h6>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div
+                    style="
+                      padding: 1rem;
+                      border-radius: 2rem;
+                      background-color: #2a1454;
+                    "
+                  >
+                    <img src="/public/graduation.svg" alt="" />
+                  </div>
+                  <div>
+                    <h5>2023 - 2024</h5>
+                    <h4>Graphics Design Course</h4>
+                    <h6>Harverd University</h6>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="right">
+            <h4 style="display: flex; padding-left: 1.5rem">Work Experience</h4>
+            <ul>
+              <li>
+                <div>
+                  <div
+                    style="
+                      padding: 1rem;
+                      border-radius: 2rem;
+                      background-color: #2a1454;
+                    "
+                  >
+                    <img src="/public/briefcase.svg" alt="" />
+                  </div>
+                  <div>
+                    <h5>2023 - 2024</h5>
+                    <h4>Programming course</h4>
+                    <h6>Harverd University</h6>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div
+                    style="
+                      padding: 1rem;
+                      border-radius: 2rem;
+                      background-color: #2a1454;
+                    "
+                  >
+                    <img src="/public/briefcase.svg" alt="" />
+                  </div>
+                  <div>
+                    <h5>2023 - 2024</h5>
+                    <h4>Graphics Design Course</h4>
+                    <h6>Harverd University</h6>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div
+                    style="
+                      padding: 1rem;
+                      border-radius: 2rem;
+                      background-color: #2a1454;
+                    "
+                  >
+                    <img src="/public/briefcase.svg" alt="" />
+                  </div>
+                  <div>
+                    <h5>2023 - 2024</h5>
+                    <h4>Graphics Design Course</h4>
+                    <h6>Harverd University</h6>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <div
+                    style="
+                      padding: 1rem;
+                      border-radius: 2rem;
+                      background-color: #2a1454;
+                    "
+                  >
+                    <img src="/public/briefcase.svg" alt="" />
+                  </div>
+                  <div>
+                    <h5>2023 - 2024</h5>
+                    <h4>Graphics Design Course</h4>
+                    <h6>Harverd University</h6>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 5rem 0rem;
+        "
+      >
+        <h5
+          style="
+            font-size: 45px;
+            background-image: linear-gradient(to right, #8d59f7, #f4effe);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 0;
+            padding: 0;
+          "
+        >
+          My Skills
+        </h5>
+        <p style="color: white; font-size: 16px">OFFERED SERVICES</p>
+        <div class="skills">
+          <div class="skill-set">
+            <div class="skill-box">
+              <img src="/public/figma.svg" alt="" />
+              <h5>92%</h5>
+            </div>
+            <h6>Figma</h6>
+          </div>
+          <div class="skill-set">
+            <div class="skill-box">
+              <img src="/public/sketch.svg" alt="" />
+              <h5>80%</h5>
+            </div>
+            <h6>Sketch</h6>
+          </div>
+          <div class="skill-set">
+            <div class="skill-box">
+              <img src="/public/adobe-xd.svg" alt="" />
+              <h5>85%</h5>
+            </div>
+            <h6>XD</h6>
+          </div>
+          <div class="skill-set">
+            <div class="skill-box">
+              <img src="/public/wordpress.svg" alt="" />
+              <h5>99%</h5>
+            </div>
+            <h6>WordPress</h6>
+          </div>
+          <div class="skill-set">
+            <div class="skill-box">
+              <img src="/public/react.svg" alt="" />
+              <h5>89%</h5>
+            </div>
+            <h6>React</h6>
+          </div>
+          <div class="skill-set">
+            <div class="skill-box">
+              <img src="/public/js.svg" alt="" />
+              <h5>93%</h5>
+            </div>
+            <h6>JavaScript</h6>
+          </div>
+        </div>
+      </div>
+      <div
+        style="
+          margin: 0vw 5vw;
+          padding: 4rem 0rem;
+          max-height: 85px;
+          display: flex;
+          justify-content: space-between;
+        "
+      >
+        <div
+          style="display: flex; max-width: 20%; gap: 0rem 1rem; font-size: 3vh"
+        >
+          <h3
+            style="
+              font-size: 64px;
+              font-family: 'Helvetica Neue', sans-serif;
+              -webkit-text-fill-color: white;
+            "
+          >
+            14
+          </h3>
+          <h4
+            style="
+              font-size: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: normal;
+              color: white;
+            "
+          >
+            Years of Experience
+          </h4>
+        </div>
+        <div style="display: flex; max-width: 20%; gap: 0rem 1rem">
+          <h3
+            style="
+              font-size: 64px;
+              font-family: 'Helvetica Neue', sans-serif;
+              -webkit-text-fill-color: white;
+            "
+          >
+            50+
+          </h3>
+          <h4
+            style="
+              font-size: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: normal;
+              color: white;
+            "
+          >
+            Projects Completed
+          </h4>
+        </div>
+        <div style="display: flex; max-width: 20%; gap: 0rem 1rem">
+          <h3
+            style="
+              font-size: 64px;
+              font-family: 'Helvetica Neue', sans-serif;
+              -webkit-text-fill-color: white;
+            "
+          >
+            1.5K
+          </h3>
+          <h4
+            style="
+              font-size: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: normal;
+              color: white;
+            "
+          >
+            Happy Clients
+          </h4>
+        </div>
+        <div style="display: flex; max-width: 20%; gap: 0rem 1rem">
+          <h3
+            style="
+              font-size: 64px;
+              font-family: 'Helvetica Neue', sans-serif;
+              -webkit-text-fill-color: white;
+            "
+          >
+            14
+          </h3>
+          <h4
+            style="
+              font-size: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: normal;
+              color: white;
+            "
+          >
+            Years of Experience
+          </h4>
+        </div>
+      </div>
+      <footer
+        style="
+          min-height: 45vh;
+          background-color: #2a1454;
+          display: flex;
+          flex-direction: column;
+          padding-top: 10vh;
+          align-items: center;
+        "
+      >
+        <div class="footer">
+          <img src="/public/logo-dark.webp" width="85" height="85" alt="" />
+          <div>
+            <a href="">About</a>
+            <a href="">Projects</a>
+            <a href="">Contact</a>
+          </div>
+          <p>© 2024 All rights reserved by <span>ThemeJunction</span></p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

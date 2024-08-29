@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hassan - Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/helvetica-neue-5?styles=103500"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <style>
+      th {
+        text-align: center;
+        font-size: 45px;
+        background-color: #050709;
+        color: white;
+      }
+
+      th,
+      td {
+        padding: 51px 0px;
+        border-bottom: 1px solid #d9d9d9;
+        background-color: transparent;
+        color: white;
+      }
+      /* tr {
+        background-color: white;
+        transition: 1s background-image;
+      } */
+      tr {
+        /* background-image: linear-gradient(to right, white, white); */
+        background-color: transparent;
+        transition-property: background-color;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 1s;
+        color: black;
+        animation-delay: 1s;
+        visibility: visible;
+        animation-delay: 0.7s;
+
+        .arrow {
+          transform: rotate(-50deg);
+          transition-property: transform;
+          transition-duration: 1s;
+          transition-timing-function: ease-in-out;
+          transition-delay: 1ms;
+        }
+      }
+      tr:hover {
+        background-image: linear-gradient(to right, #7b48e1, #341b66);
+        transition-property: background-image;
+        transition-duration: 5ms;
+        transition-timing-function: ease-in-out;
+        transition-delay: 1s;
+        /* background-image: linear-gradient(to right, #7b48e1, #341b66); */
+        color: white;
+        padding: 0;
+        margin: 0;
+
+        .arrow {
+          transform: rotate(50deg);
+          transition-property: transform;
+          transition-duration: 500ms;
+          transition-timing-function: ease-in-out;
+          transition-delay: 1ms;
+        }
+      }
+
+      td {
+        font-size: 20px;
+      }
+
+      table {
+        border: 1px solid #d9d9d9;
+        border-collapse: collapse;
+      }
+      .arrow {
+        transform: rotate(30deg);
+      }
+      .dp-image {
+        background-size: cover;
+        background-attachment: fixed;
+        transform: rotate(5deg);
+        transition-property: transform;
+        transition-duration: 200ms;
+        transition-timing-function: ease-in-out;
+        transition-delay: 1ms;
+        position: relative;
+        img {
+          position: absolute;
+          transform: rotate(-3deg);
+          transform: scale(2);
+          border-radius: 2rem;
+          top: 100px;
+          right: 100px;
+          overflow: hidden;
+        }
+      }
+      .dp-image:hover {
+        transform: rotate(1deg);
+        transition-property: transform;
+        transition-duration: 200ms;
+        transition-timing-function: ease-in-out;
+        transition-delay: 1ms;
+      }
+      .hire {
+        position: absolute;
+        font-size: 120px;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #864ff5;
+        -webkit-text-fill-color: white;
+        top: 10%;
+        width: 100%;
+        text-align: center;
+        font-family: "Russo One", sans-serif;
+        z-index: -1;
+        opacity: 0.3;
+        animation: mymove 4s infinite ease-in-out;
+      }
+
+      @keyframes mymove {
+        0% {
+          font-size: 250px;
+        }
+
+        50% {
+          font-size: 235px;
+        }
+
+        100% {
+          font-size: 250px;
+        }
+      }
+    </style>
+    <link rel="icon" type="image/x-icon" href="/public/logo-dark.webp" />
+  </head>
+  <body>
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vw;
+        background-color: white;
+        background-image: linear-gradient(to right, #0f0715, #100717, #281745);
+      "
+    >
+      <section>
+        <nav
+          style="
+            padding: 0vw 5vw;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background-color: white;
+            background-image: linear-gradient(
+              to right,
+              #0f0715,
+              #100717,
+              #281745
+            );
+
+            display: flex;
+            justify-content: space-between;
+            align-content: baseline;
+          "
+        >
+          <a href="/index.html" style="display: flex; color: white">
+            <div
+              style="
+                display: flex;
+                gap: 2rem;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <img
+                src="/public/logo-light.webp"
+                height="60"
+                width="60"
+                alt=""
+              />
+              <h1>Hassan Amin Shah</h1>
+            </div>
+          </a>
+          <div class="nav">
+            <!-- <h1>
+              <a href="/index.html"> Home </a>
+            </h1> -->
+            <!-- <div class="links">
+              <a href="">
+                <h1>Home</h1>
+              </a>
+              <h3></h3>
+            </div> -->
+            <div class="links">
+              <a href="/about.html">
+                <h1 style="color: white">About</h1>
+              </a>
+              <h3></h3>
+            </div>
+            <div class="links">
+              <h1 style="color: white">Projects</h1>
+              <h3></h3>
+            </div>
+            <div class="links">
+              <a href="/contact.html">
+                <h1 style="color: white">Contact</h1>
+              </a>
+              <h3></h3>
+            </div>
+          </div>
+          <h1
+            style="
+              padding: 1rem 2rem;
+              background-color: #341b66;
+              background-image: linear-gradient(to right, #341b66, #7b48e1);
+              color: white;
+              border-radius: 3rem;
+              font-weight: bold;
+              cursor: pointer;
+            "
+          >
+            <a href="mailto:hasanaminshah@gmail.com" style="color: white">
+              Hire Me!
+            </a>
+          </h1>
+        </nav>
+        <div style="position: relative">
+          <div
+            style="
+              display: flex;
+              flex: 1;
+              padding: 7rem 0rem;
+              padding-right: 3rem;
+              margin: 0vw 5vw;
+              position: relative;
+            "
+          >
+            <div>
+              <h2 style="font-size: 46px; color: white">I am Hassan</h2>
+              <h2
+                style="
+                  font-size: 70px;
+                  font-weight: bolder;
+                  background-image: linear-gradient(
+                    to right,
+                    #905df8,
+                    #f4f0ff,
+                    #f4f0ff
+                  );
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                "
+              >
+                Web Developer + <br />
+                UX Designer
+              </h2>
+              <p style="font-size: 25px; max-width: 50%; color: white">
+                I break down complex user experience problems to create
+                integrity focused solutions that connect billions of people
+              </p>
+              <div style="display: flex; gap: 2rem">
+                <div
+                  style="
+                    display: flex;
+                    gap: 0.5rem;
+                    justify-items: center;
+                    align-items: center;
+                    border: 1px solid #8750f7;
+                    border-radius: 3rem;
+                    padding: 0.2rem 3rem;
+                  "
+                >
+                  <a href="/public/Hassan Amin Shah.pdf" download>
+                    <p style="font-weight: 600; color: #8750f7">Download CV</p>
+                  </a>
+                  <img
+                    src="/public/download.svg"
+                    width="28"
+                    height="28"
+                    alt=""
+                  />
+                </div>
+                <div style="display: flex; gap: 2rem; margin: 1rem 0rem">
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      border: 1px solid #8750f7;
+                      border-radius: 50%;
+                      padding: 0.8rem;
+                    "
+                  >
+                    <img src="/public/twitter.svg" alt="" />
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      border: 1px solid #8750f7;
+                      border-radius: 50%;
+                      padding: 0.8rem;
+                    "
+                  >
+                    <img src="/public/browser.svg" alt="" />
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      border: 1px solid #8750f7;
+                      border-radius: 50%;
+                      padding: 0.8rem;
+                    "
+                  >
+                    <img src="/public/linkedin.svg" alt="" />
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      border: 1px solid #8750f7;
+                      border-radius: 50%;
+                      padding: 0.8rem;
+                    "
+                  >
+                    <img src="/public/github.svg" alt="" />
+                  </div>
+                  <!-- <img src="/public/browser.svg" alt="" />
+              <img src="/public/linkedin.svg" alt="" />
+              <img src="/public/github.svg" alt="" /> -->
+                </div>
+              </div>
+            </div>
+            <div class="dp-image">
+              <img
+                src="/public/hassan-Photoroom.png"
+                width="270"
+                height="300"
+                alt=""
+              />
+            </div>
+          </div>
+          <h1 class="hire">HIRE</h1>
+        </div>
+
+        <div
+          style="
+            margin: 0vw 5vw;
+            padding: 4rem 0rem;
+            max-height: 85px;
+            display: flex;
+            justify-content: space-between;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              max-width: 20%;
+              gap: 0rem 1rem;
+              font-size: 3vh;
+            "
+          >
+            <h3
+              style="
+                font-size: 64px;
+                font-family: 'Helvetica Neue', sans-serif;
+                -webkit-text-fill-color: white;
+              "
+            >
+              14
+            </h3>
+            <h4
+              style="
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: normal;
+                color: white;
+              "
+            >
+              Years of Experience
+            </h4>
+          </div>
+          <div style="display: flex; max-width: 20%; gap: 0rem 1rem">
+            <h3
+              style="
+                font-size: 64px;
+                font-family: 'Helvetica Neue', sans-serif;
+                -webkit-text-fill-color: white;
+              "
+            >
+              50+
+            </h3>
+            <h4
+              style="
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: normal;
+                color: white;
+              "
+            >
+              Projects Completed
+            </h4>
+          </div>
+          <div style="display: flex; max-width: 20%; gap: 0rem 1rem">
+            <h3
+              style="
+                font-size: 64px;
+                font-family: 'Helvetica Neue', sans-serif;
+                -webkit-text-fill-color: white;
+              "
+            >
+              1.5K
+            </h3>
+            <h4
+              style="
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: normal;
+                color: white;
+              "
+            >
+              Happy Clients
+            </h4>
+          </div>
+          <div style="display: flex; max-width: 20%; gap: 0rem 1rem">
+            <h3
+              style="
+                font-size: 64px;
+                font-family: 'Helvetica Neue', sans-serif;
+                -webkit-text-fill-color: white;
+              "
+            >
+              14
+            </h3>
+            <h4
+              style="
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: normal;
+                color: white;
+              "
+            >
+              Years of Experience
+            </h4>
+          </div>
+        </div>
+      </section>
+      <section
+        style="
+          padding: 5vh 5vw;
+          background-image: linear-gradient(
+            to right,
+            #0f0715,
+            #100717,
+            #281745
+          );
+        "
+      >
+        <div
+          style="
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+          "
+        >
+          <h5
+            style="
+              font-weight: bolder;
+              background-image: linear-gradient(to right, #864ff5, #341b66);
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+              font-size: 45px;
+              padding: 0;
+              margin: 0;
+            "
+          >
+            My Quality Services
+          </h5>
+          <p style="font-size: 1.2rem; max-width: 50vw">
+            We put your ideas and thus your wishes in the form of a unique web
+            project that inspires you and you customers.
+          </p>
+        </div>
+        <table style="width: 100%">
+          <tr style="padding: 2rem">
+            <div style="color: #8750f7">
+              <th style="width: 10vw"><h7>01</h7></th>
+              <th style="width: 30vw; text-align: start">Branding Design</th>
+            </div>
+            <td style="width: 40vw">
+              I break down complex user experinece problems to create integritiy
+              focussed solutions that connect billions of people
+            </td>
+            <td style="display: flex; justify-content: center">
+              <img class="arrow" src="/public/arrow-right.svg" alt="" />
+            </td>
+          </tr>
+
+          <tr>
+            <th><h7> 02</h7></th>
+            <th style="text-align: start">Web Design</th>
+            <td>
+              I break down complex user experinece problems to create integritiy
+              focussed solutions that connect billions of people
+            </td>
+            <td style="display: flex; justify-content: center">
+              <img src="/public/arrow-right.svg" alt="" class="arrow" />
+            </td>
+          </tr>
+          <tr>
+            <th>03</th>
+            <th style="text-align: start">UI/UX Design</th>
+            <td>
+              I break down complex user experinece problems to create integritiy
+              focussed solutions that connect billions of people
+            </td>
+            <td style="display: flex; justify-content: center">
+              <img src="/public/arrow-right.svg" alt="" class="arrow" />
+            </td>
+          </tr>
+          <tr>
+            <th>04</th>
+            <th style="text-align: start">Graphic Design</th>
+            <td>
+              I break down complex user experinece problems to create integritiy
+              focussed solutions that connect billions of people
+            </td>
+            <td style="display: flex; justify-content: center">
+              <img
+                class="arrow"
+                src="/public/arrow-right.svg"
+                alt=""
+                class="arrow"
+              />
+            </td>
+          </tr>
+        </table>
+      </section>
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 5rem 0rem;
+        "
+      >
+        <h5
+          style="
+            font-size: 45px;
+            background-image: linear-gradient(to right, #8d59f7, #f4effe);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 0;
+            padding: 0;
+          "
+        >
+          My Skills
+        </h5>
+        <p style="color: white; font-size: 16px">OFFERED SERVICES</p>
+        <div class="skills">
+          <div class="skill-set">
+            <div class="skill-box">
+              <img src="/public/figma.svg" alt="" />
+              <h5>92%</h5>
+            </div>
+            <h6>Figma</h6>
+          </div>
+          <div class="skill-set">
+            <div class="skill-box">
+              <img src="/public/sketch.svg" alt="" />
+              <h5>80%</h5>
+            </div>
+            <h6>Sketch</h6>
+          </div>
+          <div class="skill-set">
+            <div class="skill-box">
+              <img src="/public/adobe-xd.svg" alt="" />
+              <h5>85%</h5>
+            </div>
+            <h6>XD</h6>
+          </div>
+          <div class="skill-set">
+            <div class="skill-box">
+              <img src="/public/wordpress.svg" alt="" />
+              <h5>99%</h5>
+            </div>
+            <h6>WordPress</h6>
+          </div>
+          <div class="skill-set">
+            <div class="skill-box">
+              <img src="/public/react.svg" alt="" />
+              <h5>89%</h5>
+            </div>
+            <h6>React</h6>
+          </div>
+          <div class="skill-set">
+            <div class="skill-box">
+              <img src="/public/js.svg" alt="" />
+              <h5>93%</h5>
+            </div>
+            <h6>JavaScript</h6>
+          </div>
+        </div>
+      </div>
+      <footer
+        style="
+          height: 55vh;
+          background-color: #2a1454;
+          display: inline-block;
+
+          align-items: center;
+        "
+      >
+        <div class="footer">
+          <img src="/public/logo-dark.webp" width="85" height="85" alt="" />
+          <div>
+            <a href="">About</a>
+            <a href="">Projects</a>
+            <a href="">Contact</a>
+          </div>
+          <p>© 2024 All rights reserved by <span>ThemeJunction</span></p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
